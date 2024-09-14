@@ -3,14 +3,17 @@
 # 09/09/2024
 # Bug Collector Programming Project
 # COSC 1010 NT
-#
-# Initialize variables for bugs and total number of bugs collected.
-total_bugs = 0
-# Get number of bugs collected each day using a for loop.
+
+# Constant Variable
+num_bugs = 0 # The number of bugs collected each day. 
+# Initilized variable for bugs and total number of bugs collects.
+total = 0 
+# Determine the amount of bugs collected each day using a for loop.
 for day in range (1, 6):
     print('Enter the amount of bugs you collected on day', day)
-    bugs = int(input())
-    total_bugs += bugs      
+    # Calculate the number of bugs collected each day. 
+    num_bugs = int(input()) 
+    total += num_bugs      
 # Display the total number of bugs collected.
-print('The total amount of bugs collected is', total_bugs, 'bugs.')
+print('The total amount of bugs collected is: ', total, 'bugs.')
 
