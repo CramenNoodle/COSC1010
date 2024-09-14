@@ -4,21 +4,26 @@
 # Areas of Rectangles Programming Project
 # COSC 1010 NT
 #
-# Local variables
-area_1 = 'length_A,'' width_A'
-area_2 = 'lenght_B,''width_B'
+# Constant variables
+area_1 = 'lengthA,'' widthA'
+area_2 = 'lenghtB,''widthB'
+# Local Variables
+lengthA = 0 # Length of Rectangle 1.
+widthA = 0 # Width of Rectangle 1.
+lengthB = 0 # Length of Rectangle 2.
+widthB = 0 # Width of Rectangle 2. 
 # Get length A
-length_A = int(input('Enter the length of retangle 1:'))
+lengthA = int(input('Enter the length of retangle 1:'))
 # Get width A
-width_A = int(input('Enter the width of retangle 1:'))
+widthA = int(input('Enter the width of retangle 1:'))
 # Get length B
-length_B = int(input('Enter the length of retangle 2:'))
+lengthB = int(input('Enter the length of retangle 2:'))
 # Get width B
-width_B = int(input('Enter the width of rectangle 2:'))
+widthB = int(input('Enter the width of rectangle 2:'))
 # Calculate area A
-area_1 = length_A * width_A
+area_1 = lengthA * widthA
 # Calculate area B
-area_2 = length_B * width_B
+area_2 = lengthB * widthB
 # Print area comparison using if-elif-else statements
 if area_1 > area_2:
     print('Rectangle one has a greater area.')
