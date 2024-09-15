@@ -4,33 +4,42 @@
 # Budget Analysis Programming Project
 # COSC 1010 NT
 #
-# This program calculates the users monthly budget.
-# Constant Variables.
-budget = 0.0
+# This program calculates the users monthly budget and expenses 
+# and if the user is over or under budget.
+
+# Constant variables
+budget = int(input('Enter the budget of the month: '))
+another = 'y' #Variable to control the loop.
+# Local Variables
 expenses = 0.0
-keep_going = 'y' # Variable to control the loop.
-# Initilize an accumlator variable.
+
+#Declare the accumulator
 total = 0.0
-#Get the monthly budget.
-budget = int(input('Enter your budget for this month:'))
-# Process one or more items.
-while keep_going == 'y' or  keep_going == 'Y':
-    # Get the monthly expenses
-    expenses = float(input('Enter your monthly expenses:'))
+
+# Process one or more expenses
+while another == 'y' or another == 'Y':
+    # Get the expenses
+    expenses = float(input('Enter the expenses: '))
+    # Calculate the expenses
     total += expenses
-    # Do this all over again.
-    keep_going = input('Do you have any other expenses? ' + 
-                       'Enter y for yes:')
-# Display the results with the if-elif-else statment
+    # Do this again ?
+    another = input('Do you have more expenses? ' + 
+                    ' (Enter y for yes): ')
+
+# Display if the users total amount over or under budget.
 if total > budget:
-    print(f'You went ${total - budget:,.2f} over your budget.')
+    print(f'You are ${total - budget:,.2f} over the budget.')
 elif total == budget:
-    print('You stayed within your budget!')
+    print(f'Your budget is enough for expenses!')
 else:
-    print(f'The total that you are under budget is:${total - budget:,.2f}')
-# Display the total
+    print(f'You are ${total - budget:,.2f} under the budget')
+# Display the total 
 print(f'Total: ${total:,.2f}')
 
 
 
+
+
+
+ 
 
