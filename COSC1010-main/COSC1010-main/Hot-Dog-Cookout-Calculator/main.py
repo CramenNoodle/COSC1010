@@ -48,9 +48,9 @@ else:
 # Determine the left over hot dog buns, if any. 
 leftoverbuns = hot_dog_buns_per_package * minBuns - total
 # Display the number of hot dog packages needed.
-print(f' Minimum number of hot dog packages needed: ', minHotdogs)
+print(f'Minimum number of hot dog packages needed: ', minHotdogs)
 # Display the number of hot dog bun packages needed.
-print(f' Minimum number of hot dog bun packages needed: ', minBuns)
+print(f'Minimum number of hot dog bun packages needed: ', minBuns)
 # Display the number of hot dogs leftover.
 print(f'Amount of hot dogs left over: ', leftoverdogs)
 # Display the number of hot dog buns leftover.
