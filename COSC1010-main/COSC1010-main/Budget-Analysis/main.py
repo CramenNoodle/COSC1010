@@ -20,19 +20,24 @@ total = 0.0
 while another == 'y' or another == 'Y':
     # Get the expenses
     expenses = float(input('Enter the expenses: '))
-    # Calculate the expenses
+    # Validate the expenses
+    while expenses < 0:
+        print('ERROR: the expenses cannot be negative.')
+        expenses = float(input('Enter the correct ' +
+                               'expense amount: '))
+    #Calculate the total expenses.
     total += expenses
-    # Do this again ?
-    another = input('Do you have more expenses? ' + 
-                    ' (Enter y for yes): ')
+    # Do this again?
+    another = input('Do you have another expense? ' +
+                    '(Enter y for yes): ')
 
 # Display if the users total amount over or under budget.
 if total > budget:
-    print(f'You are ${total - budget:,.2f} over the budget.')
+    print(f'You are over your budget by $', format(abs(total),',.2f'))
 elif total == budget:
     print(f'Your budget is enough for expenses!')
 else:
-    print(f'You are ${total - budget:,.2f} under the budget')
+    print(f'You are under the budget by $',format(abs(total),',.2f'))
 # Display the total 
 print(f'Total: ${total:,.2f}')
 
