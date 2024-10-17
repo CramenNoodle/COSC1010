@@ -1,7 +1,24 @@
 #
-# Name
-# Date
+# Carmen Grajeda
+# 10/9/2024
 # File Display Programming Project
-# COSC 2409 DNT
+# COSC 1010 NT
 #
-# Use comments liberally throughout the program. 
+
+# This program opens a file named numbers.txt 
+# and displays all of the numbers in the file.
+
+# Open the file. 
+myfile = open('number.txt', 'r')
+
+# Read and display the file's contents.
+for line in myfile:
+    number = int(line)
+    print(number)
+
+# Close the file.
+myfile.close()
+    
+                  
+
+     
