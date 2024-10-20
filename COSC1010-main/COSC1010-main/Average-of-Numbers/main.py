@@ -40,8 +40,7 @@ def main():
     average = total / count
 
     # Display the average
-    print(f'The average of all the numbers in "numbers.txt" is {average: .2f}.')
-
+    print(f'The average of all the numbers in "numbers.txt" is: {average: .2f}.')
 # Call the main function
 main()
 
