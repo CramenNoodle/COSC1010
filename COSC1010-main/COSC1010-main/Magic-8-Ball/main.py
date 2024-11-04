@@ -11,7 +11,6 @@ RESPONSE_FILE = '8_ball_responses.txt' # The file used to import the responses.
 # Local Variables
 again = 'y' # Variable to control the loop. 
 response_list = [] # Variable for the list of responses.
-userQuestion = input('Ask the Magic 8 Ball a Question: ')
 
 # This program simulates a Magic 8 Ball that will generate a response
 # to a yes or no question.
@@ -54,58 +53,6 @@ def main():
 
 # Call the main function
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-    
-
-
-    
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-        
 
 
 
