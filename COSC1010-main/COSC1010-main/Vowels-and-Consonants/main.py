@@ -6,12 +6,12 @@
 #
 
 # Local Variables
-num_vowels = 0 # The number of vowels in the string
-num_consonants = 0 # The number of consonants in the string
-user_string = '' # The string from the user input
+num_vowels = 0 # The variable for the number of vowels in the string
+num_consonants = 0 # The variable for the number of consonants in the string
+user_string = '' # The variable for the string from the user input
 vowels = ['a','e','i','o','u'] # The list of vowels
-c_count = 0 # Initializes an ccumulator consonants
-v_count = 0 # Initializes an accumulator for vowels
+c_count = 0 # Variable to initializes an ccumulator consonants
+v_count = 0 # Variable to initializes an accumulator for vowels
 
 # This program accepts a string from a users input
 # as an argument and returns the number of vowels and consonants,
